@@ -1,0 +1,27 @@
+.about__upperText {
+    width: 300px;
+    margin: 200px auto 100px;
+    text-align: center;
+    // font-weight: 600;
+    letter-spacing: 8px;
+    color: $grey;
+
+}
+
+.about--contentContainer {
+    @include border;
+    display: flex;
+    // flex-basis: 600px;
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+.about--textContainer {
+    flex: 1 0 50%;
+    display: flex;
+    flex-direction: column;   
+}
+
+.about--textContainer__line span:{
+
+}

@@ -1,0 +1,33 @@
+@mixin flexVer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+@mixin flexHor {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+}
+@mixin border {
+    border: 1px solid red;
+}
+
+
+
+
+$lightPink: #EDEDED;
+$darkerPink: #CCCCCC;
+$mint: #A4F1DC;
+$green: #84A016;
+$orange: #F6AB09;
+$grey: #999999;
+
+$headings: 'Playfair Display', serif;
+$secondary: 'Poppins', serif;
+
+
+
+
+
