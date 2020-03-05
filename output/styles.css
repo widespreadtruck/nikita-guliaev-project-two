@@ -311,9 +311,9 @@ p {
   margin-top: 0;
   margin-bottom: 80px;
   text-align: center;
-  letter-spacing: 8px;
-  color: #999999;
   padding-top: 150px;
+  color: #999999;
+  letter-spacing: 8px;
   font-size: 1.4rem; }
 
 .about--contentContainer {
@@ -497,7 +497,8 @@ p {
 .gallery {
   padding-top: 10rem;
   background-image: url(../assets/pattern.png);
-  background-position: center; }
+  background-position: center;
+  padding-bottom: 12rem; }
 
 .gallery-wrapper h5 {
   color: #999999;
@@ -532,3 +533,71 @@ p {
     -ms-flex: 1 0 30%;
     flex: 1 0 30%;
     margin: 10px; }
+
+.contacts--container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.contacts--leftContainer {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 45%;
+  flex: 1 0 45%; }
+
+.contacts--rightContainer {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 30%;
+  flex: 1 0 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-left: 15rem;
+  padding-top: 10rem; }
+  .contacts--rightContainer h5 {
+    color: #999999;
+    letter-spacing: 8px;
+    font-size: 1.4rem; }
+  .contacts--rightContainer h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 4.8rem;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    line-height: 60px;
+    margin-top: 0;
+    margin-bottom: 9rem; }
+  .contacts--rightContainer h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 2.3rem;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    color: #999999; }
+    .contacts--rightContainer h3 span {
+      color: black; }
+  .contacts--rightContainer p {
+    width: 300px;
+    margin-top: 0;
+    margin-bottom: 0; }
+
+.contacts--email {
+  padding-top: 3rem;
+  padding-bottom: 3rem; }
+  .contacts--email span {
+    font-weight: 600;
+    color: black; }
+
+.contacts--call span {
+  display: block;
+  color: black;
+  font-family: "Playfair Display", serif;
+  font-size: 3rem; }
