@@ -1,0 +1,26 @@
+.gallery {
+    padding-top: 10rem;
+    background-image: url(../assets/pattern.png);
+    background-position: center;
+    padding-bottom: 12rem;
+}
+
+.gallery-wrapper {
+    h5 {
+        @include fontStyleH5;
+        text-align: center;
+    }
+    h2 {
+        @include fontStyleH2;
+        text-align: center;
+    }
+}
+
+.gallery--container {
+    @include flexHor;
+    flex-wrap: wrap;
+    div {
+        flex: 1 0 30%;
+        margin: 10px;
+    }
+}

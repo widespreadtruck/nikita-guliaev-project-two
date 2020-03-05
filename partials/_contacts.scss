@@ -1,0 +1,55 @@
+.contacts--container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contacts--leftContainer {
+    flex: 1 0 45%;
+}
+
+.contacts--rightContainer {
+    flex: 1 0 30%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 15rem;
+    padding-top: 10rem;
+    h5 {
+        @include fontStyleH5;
+    }
+    h2 {
+        @include fontStyleH2;
+        margin-top: 0;
+        margin-bottom: 9rem;
+    }
+    h3 {
+        @include fontStyleH3;
+        color: $textGrey;
+        span {
+            color: black;
+        }
+    }
+    p {
+        width: 300px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+.contacts--email {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    span {
+        font-weight: 600;
+        color: black;
+    }
+}
+
+.contacts--call {
+    span {
+        display: block;
+        color: black;
+        font-family: $headings; 
+        font-size: 3rem;
+    }
+}
