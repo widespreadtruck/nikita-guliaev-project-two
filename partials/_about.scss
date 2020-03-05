@@ -14,10 +14,11 @@
     margin-bottom: 80px;
     text-align: center;
     // font-weight: 600;
-    letter-spacing: 8px;
-    color: $textGrey;
+    // letter-spacing: 8px;
+    // color: $textGrey;
     padding-top: 150px;
-    font-size: 1.4rem;
+    // font-size: 1.4rem;
+    @include fontStyleH5;
 }
 
 .about--contentContainer {
