@@ -354,6 +354,11 @@ p {
 
 .about--textContainer__par,
 .about--textContainer__name {
+  color: #999999;
+  font-size: 1.2rem;
+  line-height: 30px;
+  letter-spacing: 0.3px;
+  font-weight: 400;
   margin: 0; }
 
 .about--textContainer__name span {
@@ -423,3 +428,107 @@ p {
       top: 18px;
       left: -42px;
       font-size: 2.4rem; }
+
+.reviews {
+  padding-top: 15rem;
+  background-image: url(../assets/pattern.png);
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 720px; }
+
+.reviews-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative; }
+
+.testimonial {
+  width: 100%;
+  height: 550px;
+  background-color: white;
+  padding: 7rem 5rem;
+  text-align: center; }
+  .testimonial h5 {
+    color: #999999;
+    letter-spacing: 8px;
+    font-size: 1.4rem; }
+  .testimonial h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 4.8rem;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    line-height: 60px; }
+  .testimonial .review--italic_par {
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    line-height: 3.6rem;
+    font-size: 2.4rem;
+    color: black; }
+  .testimonial .fivestars i {
+    font-size: 2rem;
+    color: #F6AB09; }
+  .testimonial .reviews__name {
+    color: #999999;
+    font-size: 1.2rem;
+    line-height: 30px;
+    letter-spacing: 0.3px;
+    font-weight: 400; }
+    .testimonial .reviews__name span {
+      color: black;
+      font-weight: 600; }
+
+.left-arrow,
+.right-arrow {
+  position: absolute;
+  top: 275px;
+  font-size: 5rem; }
+  .left-arrow i:hover,
+  .right-arrow i:hover {
+    color: #999999; }
+
+.left-arrow {
+  left: -5rem; }
+
+.right-arrow {
+  right: -5rem; }
+
+.gallery {
+  padding-top: 10rem;
+  background-image: url(../assets/pattern.png);
+  background-position: center; }
+
+.gallery-wrapper h5 {
+  color: #999999;
+  letter-spacing: 8px;
+  font-size: 1.4rem;
+  text-align: center; }
+
+.gallery-wrapper h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 4.8rem;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  line-height: 60px;
+  text-align: center; }
+
+.gallery--container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  text-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .gallery--container div {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 30%;
+    flex: 1 0 30%;
+    margin: 10px; }

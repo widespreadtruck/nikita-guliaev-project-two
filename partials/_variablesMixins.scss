@@ -22,7 +22,7 @@ $darkpink: #CCCCCC;
 $mint: #A4F1DC;
 $green: #84A016;
 $orange: #F6AB09;
-$grey: #999999;
+$textGrey: #999999;
 
 $headings: 'Playfair Display', serif;
 $secondary: 'Poppins', serif;
@@ -30,8 +30,32 @@ $secondary: 'Poppins', serif;
 $h5fontsize: 1.4rem;
 
 
+@mixin fontStyleH4 {
+    color: $textGrey;
+    letter-spacing: 8px;
+    font-size: 1.4rem;
+}
 
+@mixin fontStyleH2 {
+    font-family: $headings; 
+    font-size: 4.8rem;  
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    line-height: 60px;
+}
 
+@mixin fontStyleItalic {
+    font-family: $headings; 
+    font-style: italic;
+    line-height: 3.6rem;
+    font-size: 2.4rem;
+    color: black;
+}
 
-
-
+@mixin fontStyleP {
+    color: $textGrey;
+    font-size: 1.2rem;
+    line-height: 30px;
+    letter-spacing: 0.3px;
+    font-weight: 400;
+}
