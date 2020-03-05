@@ -12,8 +12,8 @@
 </head>
 <body>
     <header>
-        <div class="wrapper wrapper--header">
-            <nav class="header--nav">
+        <nav class="header--nav">
+            <div class="wrapper wrapper--header">
                 <ul class="header--list header-left">
                     <li><a href="#">HOME</a></li>
                     <li><a href="#">ABOUT</a></li>
@@ -34,9 +34,10 @@
                     <div>2</div>
                 </div>
                 <!-- my big win that the circle landed just where it is supposed to w/o top/right positioning -->
+            </div>
             </nav>
-        </div>
-        <div class="hero-img"><img src="./assets/home-1.jpeg" alt="a small motor boat anchored by a beautiful beach">
+        <div class="hero-img">
+            <!-- <img src="./assets/home-1.jpeg" alt="a small motor boat anchored by a beautiful beach"> -->
         </div>
         <!-- Do I need this img to be a background? -->
     </header>
@@ -152,7 +153,36 @@
                 </div>
             <!-- </div> -->
         </Section>
-        
+        <footer class="footer">
+            <div class="wrapper">
+                <div class="footer--upperConainer">
+                    <ul>
+                        <li><a href="">Sit Map</a></li>
+                        <li><a href="">Terms & Conditions</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Help</a></li>
+                        <li><a href="">Affiliate</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="">FAQs</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Location</a></li>
+                        <li><a href="">Press</a></li>
+                    </ul>
+                    <div class="form--container">
+                        <form action="" class="email--form">
+                            <label for="email">Sign up to get our newsletter</label>
+                            <input type="email" id="email" name="email" class="email" placeholder="Your email...">
+                        </form>
+                        <div class="paperPlaneContainer"><i class="far fa-paper-plane"></i></div>
+                    </div>
+                </div>
+                <div class="footer--botomContainer">
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </footer>
 
     </main>
 </body>
