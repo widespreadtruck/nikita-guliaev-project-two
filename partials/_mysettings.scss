@@ -8,6 +8,8 @@ body {
     font-family: $secondary;
     color: black;
     font-size: 1.6rem;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 img {
@@ -24,6 +26,16 @@ a {
     margin: 0 auto;
     // @include border;
 }
+
+p {
+    color: $grey;
+    font-size: 1.2rem;
+    line-height: 30px;
+    letter-spacing: 0.3px;
+    font-weight: 400;
+}
+
+
 
 
 

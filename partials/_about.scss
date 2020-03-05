@@ -1,27 +1,107 @@
+.about {
+    background-color: $lightpink;
+    max-width: 1440px;
+    margin: 0 auto;
+    // @include border;
+    padding-bottom: 20rem;
+}
+
 .about__upperText {
-    width: 300px;
-    margin: 200px auto 100px;
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 80px;
     text-align: center;
     // font-weight: 600;
     letter-spacing: 8px;
     color: $grey;
-
+    padding-top: 150px;
+    font-size: 1.4rem;
 }
 
 .about--contentContainer {
-    @include border;
+    // @include border;
     display: flex;
-    // flex-basis: 600px;
     max-width: 70%;
     margin: 0 auto;
+    // height: 300px;
+    position: relative;
+}
+
+.about--imgContainer {
+    flex: 1 0 45%;
+    border: 10px solid white;
 }
 
 .about--textContainer {
     flex: 1 0 50%;
     display: flex;
-    flex-direction: column;   
+    flex-direction: column; 
+    // justify-content: space-between;
+    padding: 0 0 0 50px;
+    margin-bottom: 0;
 }
 
-.about--textContainer__line span:{
-
+.about--textContainer__line {
+    width: 50px;
+    border-bottom: 1px solid black;
 }
+
+.about--textContainer__title {
+    font-size: 3.5rem;
+    font-family: $headings;
+}
+
+.about--textContainer__par,
+.about--textContainer__name {
+    // font-size: 1.2rem;
+    // line-height: 30px;
+    // letter-spacing: 0.3px;
+    // font-weight: 400;
+    // in _mysettings
+    margin: 0;
+}
+
+.about--textContainer__name span {
+    color: black;
+    font-weight: 600;
+}
+
+.about--circle {
+    // position: relative;
+    img {
+        position: absolute;
+        bottom: -100px;
+        left: -100px;
+        z-index: 1;
+        width: 210px;
+        height: 210px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

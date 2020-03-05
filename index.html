@@ -6,7 +6,8 @@
     <script src="https://kit.fontawesome.com/318c8c8e58.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400i,700|Poppins:400,600&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./partials/main.css">
+    <script src="https://kit.fontawesome.com/318c8c8e58.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./output/styles.css">
     <title>Sunshine</title>
 </head>
 <body>
@@ -18,11 +19,11 @@
                     <li><a href="#">ABOUT</a></li>
                     <li><a href="#">RESERVE</a></li>
                 </ul>
-
+    
                 <div class="header--logo">
                     <h1>Sunshine</h1>
                 </div>
-
+    
                 <ul class="header--list header-right">
                     <li><a href="#">BLOG</a></li>
                     <li><a href="#">CONTACT</a></li>
@@ -35,30 +36,74 @@
                 <!-- my big win that the circle landed just where it is supposed to w/o top/right positioning -->
             </nav>
         </div>
-        <div class="hero-img"><img src="./styles/assets/home-1.jpeg" alt="a small motor boat anchored by a beautiful beach"></div>
+        <div class="hero-img"><img src="./assets/home-1.jpeg" alt="a small motor boat anchored by a beautiful beach">
+        </div>
         <!-- Do I need this img to be a background? -->
     </header>
     <main class="main">
         <section class="about">
             <div class="wrapper wrapper--about">
                 <div class="about__upperText">
-                    <h5 >A LITTLE ABOUT US</h5>
+                    <h5>A LITTLE ABOUT US</h5>
                 </div>
 
                 <div class="about--contentContainer">
+                    <div class="about--circle">
+                        <img src="./assets/home-circle-text.png" alt="">
+                    </div>                    
                     <div class="about--imgContainer">
-                        <img class="about--imgContainer__img" src="./styles/assets/home-2.jpeg" alt="a girl in sunglasses on a beach">
+                        <img class="about--imgContainer__img" src="./assets/home-2.jpeg" alt="a girl in sunglasses on a beach">
                     </div>
                     <div class="about--textContainer">
                         <div class="about--textContainer__line"><span> </span></div>
                         <h3 class="about--textContainer__title">A great place to enjoy your life</h3>
-                        <p class="about--textContainer__par"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi quos officia nesciunt vero fugit cum nisi asperiores beatae tenetur. Exercitationem id est odit et molestiae saepe unde voluptatem rem vitae, ducimus temporibus error tempore! Non voluptatibus esse sit blanditiis enim eum debitis, sapiente consectetur, magni aperiam, molestiae temporibus quis. Omnis.<p>
-                        <p class="about--textContainer__nameSign"><span>Ethan Hunt</span> - Director of Monalisa</p>
+                        <p class="about--textContainer__par"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi quos officia nesciunt vero fugit cum nisi asperiores beatae tenetur, sapiente consectetur, magni aperiam, molestiae temporibus quis. Omnis sapiente consectetur, magni aperiam.<p>
+                        <p class="about--textContainer__name"><span>Ethan Hunt</span> - Director of Monalisa</p>
                     </div>
                 </div>
-
             </div>
         </section>
+        <section class="info">
+            <!-- <div class="wrapper info-wrapper"> -->
+                <div class="info--leftContainer">
+                    <div class="articleBox box1">
+                        <div><i class="fas fa-sun"></i></div>
+                        <h5>SUNNY SEASON</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab cupiditate, incidunt ex a nesciunt quas perspiciatis doloremque! </p>
+                    </div>
+                    <div class="articleBox box2">
+                        <div><i class="fas fa-utensils"></i></div>
+                        <h5>FIVE STAR RESTAURANTS</h5>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid exercitationem sunt reiciendis perferendis, velit optio.</p>
+                    </div>
+                    <div class="articleBox box3">
+                        <div><i class="fas fa-plane"></i></div>
+                        <h5>FLIGHT INCLUDED</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae odio, cupiditate tempore voluptas necessitatibus eveniet!</p>
+                    </div>
+                    <div class="articleBox box4">
+                        <div><i class="fas fa-cocktail"></i></div>
+                        <h5>ALL INCLUSIVE</h5>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam quae dolorem dicta facere fugit porro ea!</p>
+                    </div>
+                    <div class="articleBox box5">
+                        <div><i class="fas fa-leaf"></i></div>
+                        <h5>GUIDED NATURE EXCURSIONS</h5>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae, dolorum beatae? Labore pariatur perspiciatis.</p>
+                    </div>
+                    <div class="articleBox box6">
+                        <div><i class="fas fa-bell"></i></div>
+                        <h5>WAKE UP SERVICE</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia illum asperiores porro, dolores neque odio voluptatibus.</p>
+                    </div>
+                </div>
+                <div class="info--rightContainer">
+                    <img class="full-width" src="./assets/home-3.jpeg" alt="image of mountains covered in green trees">
+                </div>
+            <!-- </div> -->
+        </section>
+        
+
     </main>
 </body>
 </html>
