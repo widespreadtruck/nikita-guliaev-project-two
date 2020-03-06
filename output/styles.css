@@ -539,7 +539,14 @@ p {
     -webkit-box-flex: 1;
     -ms-flex: 1 0 30%;
     flex: 1 0 30%;
-    margin: 10px; }
+    margin-right: 10px;
+    margin-bottom: 10px; }
+    .gallery--container div:nth-child(3n + 3) {
+      margin-right: 0; }
+    .gallery--container div:nth-child(n + 4) {
+      margin-bottom: 0; }
+    .gallery--container div img {
+      display: block; }
 
 .contacts--container {
   display: -webkit-box;
