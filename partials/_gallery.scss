@@ -21,6 +21,16 @@
     flex-wrap: wrap;
     div {
         flex: 1 0 30%;
-        margin: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        &:nth-child(3n + 3) {
+            margin-right: 0;
+        }
+        &:nth-child(n + 4) {
+            margin-bottom: 0;
+        }
+        img {
+            display: block;
+        }
     }
 }

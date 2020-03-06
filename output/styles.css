@@ -539,7 +539,14 @@ p {
     -webkit-box-flex: 1;
     -ms-flex: 1 0 30%;
     flex: 1 0 30%;
-    margin: 10px; }
+    margin-right: 10px;
+    margin-bottom: 10px; }
+    .gallery--container div:nth-child(3n + 3) {
+      margin-right: 0; }
+    .gallery--container div:nth-child(n + 4) {
+      margin-bottom: 0; }
+    .gallery--container div img {
+      display: block; }
 
 .contacts--container {
   display: -webkit-box;
@@ -666,6 +673,7 @@ p {
     border-bottom: 1px solid #999999;
     height: 41px; }
   .form--container input[placeholder] {
+    font-size: 1.4rem;
     color: #999999;
     padding-left: 0; }
 
