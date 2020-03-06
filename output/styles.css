@@ -673,6 +673,7 @@ p {
     border-bottom: 1px solid #999999;
     height: 41px; }
   .form--container input[placeholder] {
+    font-size: 1.4rem;
     color: #999999;
     padding-left: 0; }
 
