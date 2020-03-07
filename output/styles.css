@@ -215,7 +215,7 @@ a {
 p {
   color: #999999;
   font-size: 1.2rem;
-  line-height: 30px;
+  line-height: 25px;
   letter-spacing: 0.3px;
   font-weight: 400; }
 
@@ -303,7 +303,15 @@ p {
   background-image: url(../assets/home-1.jpeg);
   height: 80vh;
   min-height: 500px;
-  background-size: cover; }
+  background-size: cover;
+  background-position: center; }
+
+.hero-img-contacts {
+  background-image: url(../assets/contact-1.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 540px;
+  background-position: center; }
 
 .about {
   background-color: #EDEDED;
@@ -363,7 +371,7 @@ p {
 .about--textContainer__name {
   color: #999999;
   font-size: 1.2rem;
-  line-height: 30px;
+  line-height: 25px;
   letter-spacing: 0.3px;
   font-weight: 400;
   margin: 0; }
@@ -479,7 +487,7 @@ p {
   .testimonial .reviews__name {
     color: #999999;
     font-size: 1.2rem;
-    line-height: 30px;
+    line-height: 25px;
     letter-spacing: 0.3px;
     font-weight: 400; }
     .testimonial .reviews__name span {
@@ -641,7 +649,7 @@ p {
       color: white;
       color: #999999;
       font-size: 1.2rem;
-      line-height: 30px;
+      line-height: 25px;
       letter-spacing: 0.3px;
       font-weight: 400;
       line-height: 2rem; }
@@ -659,7 +667,7 @@ p {
   flex-direction: column;
   color: #999999;
   font-size: 1.2rem;
-  line-height: 30px;
+  line-height: 25px;
   letter-spacing: 0.3px;
   font-weight: 400; }
   .form--container label {
@@ -721,3 +729,80 @@ p {
   .footer--socialContainer i {
     color: white;
     margin-left: 3.5rem; }
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+  /* added line */ }
+
+.contacts-footer-img-container {
+  background-image: url(../assets/contact-2.jpeg);
+  background-image: cover;
+  min-height: 670px;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.contact-headerTitle1 {
+  font-family: "Playfair Display", serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-top: 10rem;
+  margin-bottom: 2.5rem; }
+
+.contact-headerPar1 {
+  max-width: 40%; }
+
+.methodsOfContact-outerContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-top: 7rem; }
+  .methodsOfContact-outerContainer i {
+    font-size: 3rem; }
+
+.methodsOfContact-containers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 30%;
+  flex: 1 0 30%;
+  padding: 0 5rem;
+  border-right: 1px solid rgba(0, 0, 0, 0.2); }
+  .methodsOfContact-containers:nth-child(3n + 3) {
+    border-right: none; }
+  .methodsOfContact-containers h5 {
+    font-family: "Playfair Display", serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    color: black;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem; }
+  .methodsOfContact-containers p {
+    margin-top: 0rem;
+    margin-bottom: 0rem; }
+
+.contact-headerTitle2 {
+  font-family: "Playfair Display", serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+  letter-spacing: 0.5px; }

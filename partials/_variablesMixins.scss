@@ -41,7 +41,6 @@ $h5fontsize: 1.4rem;
     font-size: 2.3rem;  
     font-weight: 700;
     letter-spacing: 1.2px;
-    // line-height: 60px;
 }
 
 @mixin fontStyleH2 {
@@ -63,7 +62,25 @@ $h5fontsize: 1.4rem;
 @mixin fontStyleP {
     color: $textGrey;
     font-size: 1.2rem;
-    line-height: 30px;
+    line-height: 25px;
     letter-spacing: 0.3px;
     font-weight: 400;
+}
+
+
+
+// contact page mixins
+@mixin fontStyleContactPageHeaders {
+    font-family: $headings; 
+    font-size: 3.5rem;  
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+@mixin contactPageMiniHeaders {
+    font-family: $headings; 
+    font-size: 1.4rem;  
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    color: black;
 }
