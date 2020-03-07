@@ -1,0 +1,61 @@
+.visually-hidden:not(:focus):not(:active) { 
+  position: absolute !important;
+  height: 1px; 
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap; /* added line */
+}
+
+.contacts-footer-img-container {
+    background-image: url(../assets/contact-2.jpeg);
+    background-image: cover;
+    min-height: 670px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.contact-headerTitle1 {
+    @include fontStyleContactPageHeaders;
+    margin-top: 10rem;
+    margin-bottom: 2.5rem;
+}
+
+.contact-headerPar1 {
+    max-width: 40%;
+}
+
+.methodsOfContact-outerContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 7rem;
+    i {
+        font-size: 3rem;
+    }
+}
+
+.methodsOfContact-containers {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 30%;
+    padding: 0 5rem;
+    border-right: 1px solid rgba($color: #000000, $alpha: 0.2);
+    &:nth-child(3n + 3) {
+        border-right: none;
+    }
+    h5 {
+        @include contactPageMiniHeaders;
+        margin-top: 2rem;
+        margin-bottom: 1.5rem;
+    }
+    p {
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+    }
+}
+
+.contact-headerTitle2 {
+    @include fontStyleContactPageHeaders;
+}

@@ -28,11 +28,12 @@ a {
 }
 
 p {
-    color: $textGrey;
-    font-size: 1.2rem;
-    line-height: 30px;
-    letter-spacing: 0.3px;
-    font-weight: 400;
+    // color: $textGrey;
+    // font-size: 1.2rem;
+    // line-height: 30px;
+    // letter-spacing: 0.3px;
+    // font-weight: 400;
+    @include fontStyleP;
 }
 
 
