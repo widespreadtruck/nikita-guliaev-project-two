@@ -58,4 +58,78 @@
 
 .contact-headerTitle2 {
     @include fontStyleContactPageHeaders;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+}
+
+.contact-headerPar2 {
+    padding-bottom: 7rem;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    input, textarea {
+        border-top: 1px solid transparent;
+        border-left: 1px solid transparent;
+        border-right: 1px solid transparent;
+        border-bottom: 1px solid rgba($color: #000000, $alpha: 0.2);
+        &:hover {
+        border-bottom: 1px solid rgba($color: #000000, $alpha: 1);
+        }
+    }
+}
+
+#contactFormName,
+#contactFormEmail,
+#contactFormSubject {
+    height: 3rem;
+    flex: 1 0 30%;
+    margin-right: 10px;
+    margin-left: 10px;
+    &:nth-child(3n + 3) {
+        margin-right: 0;
+    }
+    &::placeholder {
+    @include fontStyleP;
+    opacity: 1;   
+    }
+    &:hover::placeholder {
+        color: black;
+    }
+}
+
+#contactFormName {
+    margin-left: 0;
+}
+
+#contactFormText {
+    margin-top: 2rem;
+    width: 100%;
+    height: 150px;
+    @include fontStyleP;
+    font-family: $secondary; 
+    resize: none;
+    &::placeholder {
+        opacity: 1;
+    }
+    &:hover::placeholder {
+        color: black;
+        opacity: 1;
+    }
+}
+
+.textareaButton {
+    font-size: 1.3rem;
+    margin-top: 4rem;
+    margin-bottom: 9rem;
+    height: 2.5rem;
+    padding: 0;
+    background-color: transparent;
+    border-top: 1px solid transparent;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    border-bottom: 1px solid rgba($color: #000000, $alpha: 0.2);
+
 }

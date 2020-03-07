@@ -83,12 +83,21 @@
     background-position: center;
 }
 
-// Contact page Header styles
+// Contact page Hero image styles
 .hero-img-contacts {
     background-image: url(../assets/contact-1.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     // height: 50vh;  DO I NEED IT?
+    min-height: 540px;
+    background-position: center;
+}
+
+// Blog page Hero image styles
+.hero-img-blog {
+    background-image: url(../assets/blog-1.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
     min-height: 540px;
     background-position: center;
 }
