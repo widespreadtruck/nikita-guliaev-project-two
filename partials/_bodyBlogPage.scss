@@ -1,0 +1,216 @@
+.blogBody {
+    background-color: $lightpink;
+    height: 3000px;
+    position: relative;
+    .topCenteredHeader {
+        @include fontStyleContactPageHeaders;
+        max-width: 70%;
+    }
+}
+
+.blogBodyContainer {
+    position: absolute;
+    top: -8rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 1180px;
+    background-color: white;
+    margin: 0 auto;
+}
+
+.topCeneteredHeaderAndPar {
+    @include flexVer;
+    align-items: center;
+    margin-top: 2.5rem;
+    margin-bottom: 4rem;
+    .topCenteredHeader {
+        text-align: center;
+    }
+    span {
+        color: black;
+    }
+}
+
+.adminDateCategoryContainer {
+    display: flex;
+    flex-direction: row;
+    height: 10rem;
+    border: 1px solid transparent;
+    border-bottom: 1px solid $darkpink;
+    margin-bottom: 5rem;
+    .adminDateCategoryContainer-leftContainer {
+        flex: 1 0 50%;
+        display: flex;
+        justify-content: flex-start;
+        &__rightSide {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+    }
+    .adminDateCategoryContainer-rightContainer {
+        flex: 1 0 50%;
+        display: flex;
+        justify-content: space-between;
+        @include flexHor;
+        .rightContainer-box {
+            flex: 1 0 30%;
+            display: flex;
+            flex-direction: column;
+            // justify-content: flex-start;
+            align-items: flex-start;
+        }
+    }
+    H5 {
+        @include contactPageMiniHeaders;
+        margin-top: 2rem;
+        margin-bottom: 0rem;
+    }
+}
+
+.avatarCircleContainer {
+    img {
+        border-radius: 100%;
+        margin-right: 2rem;
+        // z-index: 2;
+    }
+}
+
+
+.adminDateCategoryContainer-leftContainer__rightSide,
+.rightContainer-box {
+    margin-top: 0;
+    margin-bottom: 0;
+    p {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+.blog-body-paragraphs {
+    padding-bottom: 2rem;
+    margin: 0;
+    &:hover {
+        color: black;
+    }
+}
+
+.blogBody--socialContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    // text-align: center;
+    H5 {
+        @include contactPageMiniHeaders;
+    }
+    .blogBody--socials_Container {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        padding: 0;
+        margin-bottom: 6rem;
+        li {
+            padding: 1rem;
+        }
+    }
+}
+
+.blogBody--socials_Container a {
+    color: $textGrey;
+    &:hover {
+        color: $mint;
+    }
+}
+
+.relatedPosts, .blog--commentsSection__header {
+    @include bottomBorder;
+    H4 {
+        @include fontStyleH4;   
+    }
+}
+
+.relatedPostsArticles {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 5rem;
+}
+
+.articleBox {
+    flex: 1 0 30%;
+    margin-right: 20px;
+    padding: 0;
+    height: auto;
+    @include bottomBorder;
+    &:nth-child(3) {
+        margin-right: 0;
+    }
+    &__H5 {
+        font-family: $headings; 
+        font-size: 1.6rem;  
+        font-weight: 700;
+        letter-spacing: 0px;
+        color: black;
+        width: 80%;
+    }
+    .fa-long-arrow-alt-right {
+        position: relative;
+        top: -3.3rem;
+        left: 6rem;
+        font-size: 1.5rem;
+        color: $textGrey;
+    }
+    &:hover {
+    box-shadow: 0 6px 2px -2px gray;
+        H5 {
+            text-decoration: underline;
+        }
+        .articleBox__continue, .fa-long-arrow-alt-right {
+            color: black;
+        }
+    }
+}
+
+.blog--commentsSection__header {
+    margin-top: 6rem;
+    margin-bottom: 5rem;
+}
+
+.blog--commentContainer {
+
+}
+
+.tip {
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  background: transparent;
+  border: 10px solid $textGrey;
+}
+.tip-left {
+  top: 10px;
+  left: -20px;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-bottom-color: transparent;  
+}
+.dialogbox .body {
+  position: relative;
+  max-width: 300px;
+  height: auto;
+  margin: 20px 10px;
+  padding: 5px;
+  background-color: #DADADA;
+  border-radius: 3px;
+//   border: 5px solid #ccc;
+}
+
+.body .message {
+  min-height: 30px;
+  border-radius: 3px;
+  font-family: Arial;
+  font-size: 14px;
+  line-height: 1.5;
+  color: $textGrey;
+}
