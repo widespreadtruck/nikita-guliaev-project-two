@@ -1,0 +1,46 @@
+.blogBody {
+    background-color: $lightpink;
+    height: 3000px;
+    position: relative;
+    .topCenteredHeader {
+        @include fontStyleContactPageHeaders;
+        max-width: 70%;
+    }
+}
+
+.blogBodyContainer {
+    position: absolute;
+    top: -8rem;
+    left: 0;
+    right: 0;
+    // bottom: 0;
+    width: 1180px;
+    background-color: white;
+    margin: 0 auto;
+}
+
+.topCeneteredHeaderAndPar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.5rem;
+    .topCenteredHeader {
+        text-align: center;
+    }
+    span {
+        color: black;
+    }
+}
+
+.adminDateCategoryContainer {
+    display: flex;
+    flex-direction: row;
+    .adminDateCategoryContainer-leftContainer {
+        flex: 1 0 50%;
+    }
+    .adminDateCategoryContainer-rightContainer {
+        flex: 1 0 50%;
+        @include flexHor;        
+    }
+}
