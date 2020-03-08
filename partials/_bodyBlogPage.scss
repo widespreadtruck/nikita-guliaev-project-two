@@ -123,7 +123,7 @@
     }
 }
 
-.relatedPosts {
+.relatedPosts, .blog--commentsSection__header {
     @include bottomBorder;
     H4 {
         @include fontStyleH4;   
@@ -134,19 +134,83 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    // width: 100%;
     margin-top: 5rem;
-    .articleBox {
-        flex: 1 0 30%;
-        margin-right: 20px;
-        padding: 0;
-        &:nth-child(3) {
-            margin-right: 0;
+}
+
+.articleBox {
+    flex: 1 0 30%;
+    margin-right: 20px;
+    padding: 0;
+    height: auto;
+    @include bottomBorder;
+    &:nth-child(3) {
+        margin-right: 0;
+    }
+    &__H5 {
+        font-family: $headings; 
+        font-size: 1.6rem;  
+        font-weight: 700;
+        letter-spacing: 0px;
+        color: black;
+        width: 80%;
+    }
+    .fa-long-arrow-alt-right {
+        position: relative;
+        top: -3.3rem;
+        left: 6rem;
+        font-size: 1.5rem;
+        color: $textGrey;
+    }
+    &:hover {
+    box-shadow: 0 6px 2px -2px gray;
+        H5 {
+            text-decoration: underline;
         }
-        .fa-long-arrow-alt-right {
-            position: relative;
-            top: 0;
-            left: 0;
+        .articleBox__continue, .fa-long-arrow-alt-right {
+            color: black;
         }
     }
+}
+
+.blog--commentsSection__header {
+    margin-top: 6rem;
+    margin-bottom: 5rem;
+}
+
+.blog--commentContainer {
+
+}
+
+.tip {
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  background: transparent;
+  border: 10px solid $textGrey;
+}
+.tip-left {
+  top: 10px;
+  left: -20px;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-bottom-color: transparent;  
+}
+.dialogbox .body {
+  position: relative;
+  max-width: 300px;
+  height: auto;
+  margin: 20px 10px;
+  padding: 5px;
+  background-color: #DADADA;
+  border-radius: 3px;
+//   border: 5px solid #ccc;
+}
+
+.body .message {
+  min-height: 30px;
+  border-radius: 3px;
+  font-family: Arial;
+  font-size: 14px;
+  line-height: 1.5;
+  color: $textGrey;
 }

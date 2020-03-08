@@ -1123,12 +1123,12 @@ p {
   .blogBody--socials_Container a:hover {
     color: #A4F1DC; }
 
-.relatedPosts {
+.relatedPosts, .blog--commentsSection__header {
   border-top: 1px solid transparent;
   border-left: 1px solid transparent;
   border-right: 1px solid transparent;
   border-bottom: 1px solid #CCCCCC; }
-  .relatedPosts H4 {
+  .relatedPosts H4, .blog--commentsSection__header H4 {
     font-family: "Playfair Display", serif;
     font-size: 2.1rem;
     font-weight: 700;
@@ -1146,15 +1146,72 @@ p {
   -ms-flex-pack: justify;
   justify-content: space-between;
   margin-top: 5rem; }
-  .relatedPostsArticles .articleBox {
-    -webkit-box-flex: 1;
-    -ms-flex: 1 0 30%;
-    flex: 1 0 30%;
-    margin-right: 20px;
-    padding: 0; }
-    .relatedPostsArticles .articleBox:nth-child(3) {
-      margin-right: 0; }
-    .relatedPostsArticles .articleBox .fa-long-arrow-alt-right {
-      position: relative;
-      top: 0;
-      left: 0; }
+
+.articleBox {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 30%;
+  flex: 1 0 30%;
+  margin-right: 20px;
+  padding: 0;
+  height: auto;
+  border-top: 1px solid transparent;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  border-bottom: 1px solid #CCCCCC; }
+  .articleBox:nth-child(3) {
+    margin-right: 0; }
+  .articleBox__H5 {
+    font-family: "Playfair Display", serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: 0px;
+    color: black;
+    width: 80%; }
+  .articleBox .fa-long-arrow-alt-right {
+    position: relative;
+    top: -3.3rem;
+    left: 6rem;
+    font-size: 1.5rem;
+    color: #999999; }
+  .articleBox:hover {
+    -webkit-box-shadow: 0 6px 2px -2px gray;
+    box-shadow: 0 6px 2px -2px gray; }
+    .articleBox:hover H5 {
+      text-decoration: underline; }
+    .articleBox:hover .articleBox__continue, .articleBox:hover .fa-long-arrow-alt-right {
+      color: black; }
+
+.blog--commentsSection__header {
+  margin-top: 6rem;
+  margin-bottom: 5rem; }
+
+.tip {
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  background: transparent;
+  border: 10px solid #999999; }
+
+.tip-left {
+  top: 10px;
+  left: -20px;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-bottom-color: transparent; }
+
+.dialogbox .body {
+  position: relative;
+  max-width: 300px;
+  height: auto;
+  margin: 20px 10px;
+  padding: 5px;
+  background-color: #DADADA;
+  border-radius: 3px; }
+
+.body .message {
+  min-height: 30px;
+  border-radius: 3px;
+  font-family: Arial;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #999999; }
