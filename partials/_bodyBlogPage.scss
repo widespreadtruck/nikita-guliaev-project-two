@@ -1,6 +1,6 @@
 .blogBody {
     background-color: $lightpink;
-    height: 3000px;
+    height: 2260px;
     position: relative;
     .topCenteredHeader {
         @include fontStyleContactPageHeaders;
@@ -13,7 +13,7 @@
     top: -8rem;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: auto;
     width: 1180px;
     background-color: white;
     margin: 0 auto;
@@ -123,7 +123,7 @@
     }
 }
 
-.relatedPosts, .blog--commentsSection__header {
+.relatedPosts, .blog--commentsSection__header, .blog--comment--form {
     @include bottomBorder;
     H4 {
         @include fontStyleH4;   
@@ -174,43 +174,93 @@
 
 .blog--commentsSection__header {
     margin-top: 6rem;
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
 }
 
 .blog--commentContainer {
-
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+    .commentContainer__leftSide {
+        // width: 50px;
+        // height: 50px;
+        flex: 1 0 5%;
+        // flex-basis: ;
+    }
 }
 
-.tip {
-  width: 0px;
-  height: 0px;
-  position: absolute;
-  background: transparent;
-  border: 10px solid $textGrey;
-}
-.tip-left {
-  top: 10px;
-  left: -20px;
-  border-top-color: transparent;
-  border-left-color: transparent;
-  border-bottom-color: transparent;  
-}
-.dialogbox .body {
-  position: relative;
-  max-width: 300px;
-  height: auto;
-  margin: 20px 10px;
-  padding: 5px;
-  background-color: #DADADA;
-  border-radius: 3px;
-//   border: 5px solid #ccc;
+.commentContainer__rightSide {
+    flex: 1 0 85%;
+    background-color: $lightpink;
+    height: 100px;
+    padding-left: 2rem;
+    padding-top: 1rem;
+    position: relative;
+    .tip {
+        position: absolute;
+        top: 1rem;
+        left: -1.3rem;
+        color: $lightpink;
+    }
+    .commentName {
+        color: black;
+        font-size: 1.4rem;
+        span {
+            color: $mint;
+            font-style: italic;
+        }
+    }
+    .commentDate {
+        color: rgba($textGrey, $alpha: 0.6);
+        font-size: 1rem;
+    }
 }
 
-.body .message {
-  min-height: 30px;
-  border-radius: 3px;
-  font-family: Arial;
-  font-size: 14px;
-  line-height: 1.5;
-  color: $textGrey;
+.commentName,
+.commentText,
+.commentDate {
+    margin: 0;
 }
+
+
+// forms
+.blog--comment--form {
+    margin-bottom: 4rem;
+}
+
+.textareaButton.blogPageButton {
+    background-color: $green;
+    padding: 1.5rem 2rem 2.5rem 2rem;
+    color: white;
+    border: none;
+    &:hover {
+        border: none;
+        background-color: darkolivegreen;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+// .tip {
+//   width: 0px;
+//   height: 0px;
+//   position: absolute;
+//   background: transparent;
+//   border: 10px solid green;
+// }
+// .tip-left {
+//   top: 0px;
+//   left: 0px;
+//   border-top-color: transparent;
+//   border-left-color: transparent;
+//   border-bottom-color: transparent;  
+// // }
+

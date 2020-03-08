@@ -109,18 +109,10 @@
                     <div class="blog--commentsSection__header">
                         <H4>02 Comments</H4>
                     </div>
-                    <div class="dialogbox">
-                        <div class="body">
-                            <span class="tip tip-left"></span>
-                            <div class="message">
-                                <span>I just made a comment about this comment box which is purely made from CSS.</span>
-                            </div>
-                        </div>
-                    </div>
                     <div class="blog--commentContainer">
                         <div class="commentContainer__leftSide"><img src="./assets/blog-6.jpeg" alt="user avatar - female in glasses"></div>
                         <div class="commentContainer__rightSide">
-                            <span class="tip tip-left"></span>
+                            <span class="tip">&#9668</span>
                             <p class="commentName">Daniel Vandaft - <span>Reply</span></p>
                             <p class="commentText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit quod error a magnam cum libero atque! Dolorem, porro.</p>
                             <p class="commentDate">Jul 17, 2015 at 15 hours</p>
@@ -129,11 +121,27 @@
                     <div class="blog--commentContainer">
                         <div class="commentContainer__leftSide"><img src="./assets/blog-7.jpeg" alt="user avatar - male in glasses"></div>
                         <div class="commentContainer__rightSide">
+                            <span class="tip">&#9668</span>
                             <p class="commentName">Jenifer Lopez - <span>Reply</span></p>
                             <p class="commentText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima unde quaerat, distinctio ipsam illo iusto dolores ullam. Incidunt.</p>
                             <p class="commentDate">Jul 17, 2015 at 15 hours</p>
                         </div>
                     </div>
+                    <div class="blog--comment--form">
+                        <H4>Leave A Comment</H4>
+                    </div>
+                    <form action="#" class="contactForm">
+                        <label for="contactFormName" class="visually-hidden"></label>
+                        <input type="text" name="contactFormName" id="contactFormName" placeholder="Enter your name...">
+                        <label for="contactFormEmail" class="visually-hidden"></label>
+                        <input type="email" name="contactFormEmail" id="contactFormEmail" placeholder="email@domain.com">
+                        <label for="contactFormSubject" class="visually-hidden"></label>
+                        <input type="text" name="contactFormSubject" id="contactFormSubject" placeholder="Subject (optional)">
+                        <label for="contactFormText" class="visually-hidden"></label>
+                        <textarea name="contactFormText" id="contactFormText" cols="30" rows="10" minlength="5" maxlength="200"
+                            placeholder="Here goes your message"></textarea>
+                        <input type="submit" value="SEND MESSENGER" class="textareaButton blogPageButton">
+                    </form>
                 </div>
             </div>
         </section>
