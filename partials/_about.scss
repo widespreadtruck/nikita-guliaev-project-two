@@ -4,6 +4,9 @@
     margin: 0 auto;
     // @include border;
     padding-bottom: 20rem;
+    @include xs {
+        padding-bottom: 0;
+    }
 }
 
 .about__upperText {
@@ -28,6 +31,9 @@
     margin: 0 auto;
     // height: 300px;
     position: relative;
+    @include xs {
+        flex-direction: column;
+    }
 }
 
 .about--imgContainer {
@@ -42,16 +48,26 @@
     // justify-content: space-between;
     padding: 0 0 0 50px;
     margin-bottom: 0;
+    @include xs {
+        padding: 0;
+    }
 }
 
 .about--textContainer__line {
     width: 50px;
     border-bottom: 1px solid black;
+    @include xs {
+        display: none;
+    }
+
 }
 
 .about--textContainer__title {
     font-size: 3.5rem;
     font-family: $headings;
+    @include xs {
+        @include fontStyleH3;
+    }
 }
 
 .about--textContainer__par,
@@ -71,7 +87,6 @@
 }
 
 .about--circle {
-    // position: relative;
     img {
         position: absolute;
         bottom: -100px;
@@ -79,6 +94,16 @@
         z-index: 1;
         width: 210px;
         height: 210px;
+    }
+    @include xs {
+        display: none;
+    }
+}
+
+.about--textContainer__name {
+    @include xs {
+        padding-bottom: 4rem;
+        padding-top: 2rem;
     }
 }
 

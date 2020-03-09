@@ -200,6 +200,13 @@ body {
   font-size: 1.6rem;
   max-width: 1440px;
   margin: 0 auto; }
+  @media (min-width: 320px) {
+    body html, body body {
+      width: 100%;
+      height: 100%;
+      margin: 0px;
+      padding: 0px;
+      overflow-x: hidden; } }
 
 img {
   max-width: 100%; }
@@ -320,11 +327,146 @@ p {
   min-height: 540px;
   background-position: center; }
 
+/*
+ * Made by Erik Terwan
+ * 24th of November 2015
+ * MIT License
+ *
+ *
+ */
+nav {
+  /*
+	 * Just a quick hamburger
+	 */
+  /*
+	 * Transform all the slices of hamburger
+	 * into a crossmark.
+	 */
+  /*
+	 * But let's hide the middle one.
+	 */
+  /*
+	 * Ohyeah and the last one should go the other direction
+	 */
+  /*
+	 * Make this absolute positioned
+	 * at the top left of the screen
+	 */
+  /*
+	 * And let's slide it in from the left
+	 */ }
+  nav #menuToggle {
+    display: block;
+    position: relative;
+    top: 7px;
+    left: 10px;
+    margin-bottom: 15px;
+    z-index: 1;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+    @media (min-width: 768px) {
+      nav #menuToggle {
+        display: none; } }
+  nav #menuToggle a {
+    text-decoration: none;
+    color: #232323;
+    -webkit-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
+    transition: color 0.3s ease; }
+  nav #menuToggle a:hover {
+    color: tomato; }
+  nav #menuToggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0;
+    /* hide this */
+    z-index: 2;
+    /* and place it over the hamburger */
+    -webkit-touch-callout: none; }
+  nav #menuToggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #cdcdcd;
+    border-radius: 3px;
+    z-index: 1;
+    -webkit-transform-origin: 4px 0px;
+    -ms-transform-origin: 4px 0px;
+    transform-origin: 4px 0px;
+    -webkit-transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    -o-transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1); }
+  nav #menuToggle span:first-child {
+    -webkit-transform-origin: 0% 0%;
+    -ms-transform-origin: 0% 0%;
+    transform-origin: 0% 0%; }
+  nav #menuToggle span:nth-last-child(2) {
+    -webkit-transform-origin: 0% 100%;
+    -ms-transform-origin: 0% 100%;
+    transform-origin: 0% 100%; }
+  nav #menuToggle input:checked ~ span {
+    opacity: 1;
+    -webkit-transform: rotate(45deg) translate(-2px, -1px);
+    -ms-transform: rotate(45deg) translate(-2px, -1px);
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323; }
+  nav #menuToggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    -webkit-transform: rotate(0deg) scale(0.2, 0.2);
+    -ms-transform: rotate(0deg) scale(0.2, 0.2);
+    transform: rotate(0deg) scale(0.2, 0.2); }
+  nav #menuToggle input:checked ~ span:nth-last-child(2) {
+    -webkit-transform: rotate(-45deg) translate(0, -1px);
+    -ms-transform: rotate(-45deg) translate(0, -1px);
+    transform: rotate(-45deg) translate(0, -1px); }
+  nav #menu {
+    position: absolute;
+    width: 300px;
+    margin: -100px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+    background: #ededed;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /* to stop flickering of text in safari */
+    -webkit-transform-origin: 0% 0%;
+    -ms-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+    -webkit-transform: translate(-100%, 0);
+    -ms-transform: translate(-100%, 0);
+    transform: translate(-100%, 0);
+    -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    -o-transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1); }
+  nav #menu li {
+    padding: 10px 0;
+    font-size: 22px; }
+  nav #menuToggle input:checked ~ ul {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none; }
+
 .about {
   background-color: #EDEDED;
   max-width: 1440px;
   margin: 0 auto;
   padding-bottom: 20rem; }
+  @media (min-width: 320px) {
+    .about {
+      padding-bottom: 0; } }
 
 .about__upperText {
   width: 350px;
@@ -345,6 +487,12 @@ p {
   max-width: 70%;
   margin: 0 auto;
   position: relative; }
+  @media (min-width: 320px) {
+    .about--contentContainer {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; } }
 
 .about--imgContainer {
   -webkit-box-flex: 1;
@@ -365,14 +513,26 @@ p {
   flex-direction: column;
   padding: 0 0 0 50px;
   margin-bottom: 0; }
+  @media (min-width: 320px) {
+    .about--textContainer {
+      padding: 0; } }
 
 .about--textContainer__line {
   width: 50px;
   border-bottom: 1px solid black; }
+  @media (min-width: 320px) {
+    .about--textContainer__line {
+      display: none; } }
 
 .about--textContainer__title {
   font-size: 3.5rem;
   font-family: "Playfair Display", serif; }
+  @media (min-width: 320px) {
+    .about--textContainer__title {
+      font-family: "Playfair Display", serif;
+      font-size: 2.3rem;
+      font-weight: 700;
+      letter-spacing: 1.2px; } }
 
 .about--textContainer__par,
 .about--textContainer__name {
@@ -395,6 +555,15 @@ p {
   width: 210px;
   height: 210px; }
 
+@media (min-width: 320px) {
+  .about--circle {
+    display: none; } }
+
+@media (min-width: 320px) {
+  .about--textContainer__name {
+    padding-bottom: 4rem;
+    padding-top: 2rem; } }
+
 .info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -406,6 +575,12 @@ p {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between; }
+  @media (min-width: 320px) {
+    .info {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; } }
 
 .info--leftContainer {
   display: -webkit-box;
@@ -427,6 +602,18 @@ p {
   padding-right: 7%;
   padding-top: 7%;
   padding-bottom: 7%; }
+  @media (min-width: 320px) {
+    .info--leftContainer {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      max-width: 75%;
+      margin: 0 auto;
+      padding: 0;
+      -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+      order: 2; } }
 
 .info--rightContainer {
   -webkit-box-flex: 1;
@@ -439,6 +626,12 @@ p {
   flex: 1 0 35%; }
   .info--rightContainer img {
     height: auto; }
+  @media (min-width: 320px) {
+    .info--rightContainer {
+      -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+      order: 1;
+      margin-top: 5rem; } }
 
 .articleBox {
   width: 45%;
@@ -450,6 +643,12 @@ p {
       top: 18px;
       left: -42px;
       font-size: 2.4rem; }
+      @media (min-width: 320px) {
+        .articleBox div i {
+          display: none; } }
+  @media (min-width: 320px) {
+    .articleBox {
+      width: 100%; } }
 
 .reviews {
   padding-top: 15rem;
