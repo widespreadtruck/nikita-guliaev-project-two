@@ -22,6 +22,9 @@
     padding-top: 150px;
     // font-size: 1.4rem;
     @include fontStyleH5;
+    @include xs {
+        padding-top: 3rem;
+    }
 }
 
 .about--contentContainer {

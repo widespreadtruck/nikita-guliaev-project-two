@@ -4,6 +4,11 @@
     background-position: center;
     display: flex;
     height: 720px;
+    @include xs {
+    padding-top: 0rem;
+    background-image: none;
+    height: auto;
+    }
 }
 .reviews-wrapper {
     display: flex;
@@ -18,16 +23,31 @@
     text-align: center;
     h5 {
         @include fontStyleH5;
+        @include xs {
+            font-size: 1rem;
+        }
     }
     h2 {
         @include fontStyleH2;
+        @include xs {
+            @include fontStyleH3;
+        }
     }
     .review--italic_par {
         @include fontStyleItalic;
+        @include xs {
+            font-size: 1.6rem;
+            text-align: left;
+        }
     }
     .fivestars i {
         font-size: 2rem;
         color: $orange;
+    }
+    .fivestars {
+        @include xs {
+            text-align: left;
+        }
     }
     .reviews__name {
         @include fontStyleP;
@@ -45,6 +65,9 @@
     font-size: 5rem;
     i:hover {
         color: $textGrey;
+    }
+    @include xs {
+        display: none;
     }
 }
 

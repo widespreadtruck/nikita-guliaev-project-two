@@ -3,6 +3,10 @@
     background-image: url(../assets/pattern.png);
     background-position: center;
     padding-bottom: 12rem;
+    @include xs {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
 }
 
 .gallery-wrapper {
@@ -19,18 +23,30 @@
 .gallery--container {
     @include flexHor;
     flex-wrap: wrap;
+    @include xs {
+
+    }
     div {
         flex: 1 0 30%;
         margin-right: 10px;
         margin-bottom: 10px;
         &:nth-child(3n + 3) {
             margin-right: 0;
+            @include xs {
+                margin-right: 10px;
+            }
         }
         &:nth-child(n + 4) {
             margin-bottom: 0;
+            @include xs {
+                margin-bottom: 10px;
+            }
         }
         img {
             display: block;
+        }
+        @include xs {
+            flex: 1 0 90%;
         }
     }
 }
