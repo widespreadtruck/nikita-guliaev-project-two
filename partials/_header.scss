@@ -1,3 +1,4 @@
+
 .header--nav {
     position: fixed;
     width: 100%;
@@ -11,13 +12,13 @@
     display: flex;
         justify-content: space-between;
     align-items: center;
-    @include tablet-and-phone {
-        display: none;
-    }
     @include md {
+        display: none;
         padding: 0 20px;
-
     }
+    // @include md {
+
+    // }
 }
 
 .header--list {
@@ -87,6 +88,11 @@
     min-height: 500px;
     background-size: cover;
     background-position: center;
+    // text-align: center;
+    @include xs {
+        min-height: auto;
+        // width: 100vw;
+    }
 }
 
 // Contact page Hero image styles

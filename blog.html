@@ -32,6 +32,52 @@
                     <div>2</div>
                 </div>
             </div>
+            <!--Sandwich menu-->
+            <div class="menu-toggle" id="menuToggle">
+                <!--
+                                        A fake / hidden checkbox is used as click reciever,
+                                        so you can use the :checked selector on it.
+                                        -->
+                <input type="checkbox" />
+            
+                <!--
+                                        Some spans to act as a hamburger.
+                        
+                                        They are acting like a real hamburger,
+                                        not that McDonalds stuff.
+                                        -->
+                <span></span>
+                <span></span>
+                <span></span>
+            
+                <!--
+                                        Too bad the menu has to be inside of the button
+                                        but hey, it's pure CSS magic.
+                                        -->
+                <ul id="menu">
+                    <a href="./index.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="#">
+                        <li>About</li>
+                    </a>
+                    <a href="#">
+                        <li>Reserve</li>
+                    </a>
+                    <a href="./blog.html">
+                        <li>Blog</li>
+                    </a>
+                    <a href="./contacts.html">
+                        <li>Contacts</li>
+                    </a>
+                    <a href="#">
+                        <li><i class="fas fa-search"></i></li>
+                    </a>
+                    <a href="#">
+                        <li><i class="fas fa-shopping-bag"></i></li>
+                    </a>
+                </ul>
+            </div>
         </nav>
         <div class="hero-img-blog">
         </div>
@@ -130,7 +176,7 @@
                     <div class="blog--comment--form">
                         <H4>Leave A Comment</H4>
                     </div>
-                    <form action="#" class="contactForm">
+                    <form action="#" class="contactForm blog-page-contact">
                         <label for="contactFormName" class="visually-hidden"></label>
                         <input type="text" name="contactFormName" id="contactFormName" placeholder="Enter your name...">
                         <label for="contactFormEmail" class="visually-hidden"></label>

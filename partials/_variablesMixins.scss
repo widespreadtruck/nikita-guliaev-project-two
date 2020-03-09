@@ -154,7 +154,7 @@ $screen-xl-max: 1200px;
 }
 
 @mixin tablet-and-phone {
-    @media (max-width: $screen-md-max) {
+    @media (min-width: $screen-md-max) {
         @content;
     }
 }

@@ -10,16 +10,13 @@ nav {
 	#menuToggle
 	{
 		display: block;
-		position: relative;
-		top: 7px;
-		left: 10px;
-		margin-bottom: 15px;
-
+width: 100vw;
+padding: 1rem;
 		z-index: 1;
 
 		-webkit-user-select: none;
 		user-select: none;
-		@include md {
+		@include tablet-and-phone {
 			display: none;
 		}
 
