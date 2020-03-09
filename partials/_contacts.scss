@@ -3,12 +3,22 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    @include xs {
+        flex-direction: column;
+    }
 }
 
 .contacts--leftContainer {
     flex: 1 0 45%;
     img {
         display: block;
+    }
+    @include xs {
+        order: 2;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2rem;
     }
 }
 
@@ -20,11 +30,18 @@
     padding-top: 10rem;
     h5 {
         @include fontStyleH5;
+        @include xs {
+            text-align: left;
+        }
     }
     h2 {
         @include fontStyleH2;
         margin-top: 0;
         margin-bottom: 5rem;
+        @include xs {
+            text-align: left;
+            margin-bottom: 1rem;
+        }
     }
     h3 {
         @include fontStyleH3;
@@ -37,6 +54,10 @@
         width: 300px;
         margin-top: 0;
         margin-bottom: 0;
+    }
+    @include xs {
+        order: 1;
+        padding: 3rem;
     }
 }
 
