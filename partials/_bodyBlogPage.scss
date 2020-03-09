@@ -74,6 +74,9 @@
                 // flex-direction: row;
             }
         }
+        @include xs {
+            margin-top: 3rem;
+        }
     }
     H5 {
         @include contactPageMiniHeaders;
@@ -82,7 +85,7 @@
     }
     @include xs {
         flex-direction: column;
-        margin-bottom: 9rem;
+        margin-bottom: 10rem;
         // margin-bottom: ;
     }
 }

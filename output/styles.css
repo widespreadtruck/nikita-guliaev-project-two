@@ -1394,6 +1394,9 @@ nav {
         .adminDateCategoryContainer .adminDateCategoryContainer-rightContainer .rightContainer-box {
           scale: 70%;
           text-align: left; } }
+    @media (max-width: 450px) {
+      .adminDateCategoryContainer .adminDateCategoryContainer-rightContainer {
+        margin-top: 3rem; } }
   .adminDateCategoryContainer H5 {
     font-family: "Playfair Display", serif;
     font-size: 1.4rem;
@@ -1408,7 +1411,7 @@ nav {
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
       flex-direction: column;
-      margin-bottom: 9rem; } }
+      margin-bottom: 10rem; } }
 
 .avatarCircleContainer img {
   border-radius: 100%;
