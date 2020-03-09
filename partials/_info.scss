@@ -2,12 +2,11 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    @include xs {
+        flex-direction: column;
+    }
 }
 
-// .info-wrapper {
-//     display: flex;
-//     flex-wrap: wrap;
-// }
 
 .info--leftContainer {
     display: flex;
@@ -21,6 +20,14 @@
     padding-right: 7%;
     padding-top: 7%;
     padding-bottom: 7%;
+    @include xs {
+        flex-direction: column;
+        // flex-wrap: wrap;
+        max-width: 75%;
+        margin: 0 auto;
+        padding: 0;
+        order: 2;
+    }
 }
 
 .info--rightContainer {
@@ -34,18 +41,11 @@
         // right: -180px;
         height: auto;
     }
+    @include xs {
+        order: 1;
+        margin-top: 5rem;
+    }
 }
-
-// .full-width {
-//   left: 50%;
-//   margin-left: -50vw;
-//   margin-right: -50vw;
-//   max-width: 30vw;
-//   position: relative;
-//   right: 50%;
-//   width: 100vw;
-// }
-
 
 
 .articleBox {
@@ -58,7 +58,12 @@
             top: 18px;
             left: -42px;
             font-size: 2.4rem;
+            @include xs {
+                display: none;
+            }
         }
     }
-
+    @include xs {
+        width: 100%;
+    }
 }
