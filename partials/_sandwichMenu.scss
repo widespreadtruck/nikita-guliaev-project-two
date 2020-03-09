@@ -19,7 +19,7 @@ nav {
 
 		-webkit-user-select: none;
 		user-select: none;
-		@include md {
+		@include tablet-and-phone {
 			display: none;
 		}
 

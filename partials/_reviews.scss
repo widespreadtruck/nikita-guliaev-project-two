@@ -25,12 +25,14 @@
         @include fontStyleH5;
         @include xs {
             font-size: 1rem;
+            text-align: left;
         }
     }
     h2 {
         @include fontStyleH2;
         @include xs {
             @include fontStyleH3;
+            text-align: left;
         }
     }
     .review--italic_par {
@@ -55,6 +57,10 @@
             color: black;
             font-weight: 600;
         }
+    }
+    @include sm {
+        padding: 3rem 1rem;
+        // padding-top: 3rem;
     }
 }
 

@@ -375,7 +375,7 @@ nav {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none; }
-    @media (max-width: 768px) {
+    @media (min-width: 768px) {
       nav #menuToggle {
         display: none; } }
   nav #menuToggle a {
@@ -635,7 +635,10 @@ nav {
   display: -ms-flexbox;
   display: flex;
   -ms-flex: 1 0 35%;
-  flex: 1 0 35%; }
+  flex: 1 0 35%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
   .info--rightContainer img {
     height: auto; }
   @media (max-width: 450px) {
@@ -701,7 +704,8 @@ nav {
     font-size: 1.4rem; }
     @media (max-width: 450px) {
       .testimonial h5 {
-        font-size: 1rem; } }
+        font-size: 1rem;
+        text-align: left; } }
   .testimonial h2 {
     font-family: "Playfair Display", serif;
     font-size: 4.8rem;
@@ -713,7 +717,8 @@ nav {
         font-family: "Playfair Display", serif;
         font-size: 2.3rem;
         font-weight: 700;
-        letter-spacing: 1.2px; } }
+        letter-spacing: 1.2px;
+        text-align: left; } }
   .testimonial .review--italic_par {
     font-family: "Playfair Display", serif;
     font-style: italic;
@@ -739,6 +744,9 @@ nav {
     .testimonial .reviews__name span {
       color: black;
       font-weight: 600; }
+  @media (max-width: 576px) {
+    .testimonial {
+      padding: 3rem 1rem; } }
 
 .left-arrow,
 .right-arrow {
@@ -807,19 +815,21 @@ nav {
       margin-right: 0; }
       @media (max-width: 450px) {
         .gallery--container div:nth-child(3n + 3) {
-          margin-right: 10px; } }
+          margin-right: 0px; } }
     .gallery--container div:nth-child(n + 4) {
       margin-bottom: 0; }
       @media (max-width: 450px) {
         .gallery--container div:nth-child(n + 4) {
-          margin-bottom: 10px; } }
+          margin-bottom: 10px;
+          margin-right: 0; } }
     .gallery--container div img {
       display: block; }
     @media (max-width: 450px) {
       .gallery--container div {
         -webkit-box-flex: 1;
         -ms-flex: 1 0 90%;
-        flex: 1 0 90%; } }
+        flex: 1 0 90%;
+        margin-right: 0; } }
 
 .contacts--container {
   display: -webkit-box;
@@ -918,6 +928,9 @@ nav {
   color: black;
   font-family: "Playfair Display", serif;
   font-size: 3rem; }
+  @media (max-width: 576px) {
+    .contacts--call span {
+      font-size: 2.5rem; } }
 
 .footer {
   min-height: 270px;
