@@ -17,6 +17,10 @@
     h2 {
         @include fontStyleH2;
         text-align: center;
+
+        @include lg {
+            font-size: 3rem;
+        }
     }
 }
 
@@ -24,28 +28,30 @@
     @include flexHor;
     flex-wrap: wrap;
     div {
-        flex: 1 0 30%;
-        margin-right: 10px;
-        margin-bottom: 10px;
-        &:nth-child(3n + 3) {
-            margin-right: 0;
-            @include xs {
-                margin-right: 0px;
-            }
+        flex: 1 1 30%;
+        margin: 5px;
+
+        @include lg {
+            flex: 1 1 45%;
         }
-        &:nth-child(n + 4) {
-            margin-bottom: 0;
-            @include xs {
-                margin-bottom: 10px;
-                margin-right: 0;
-            }
+
+        @include md {
+            flex: 1 1 95%;
+            width: 70% !important;
         }
+
         img {
             display: block;
-        }
-        @include xs {
-            flex: 1 0 90%;
-            margin-right: 0;
+            width: 100%;
+
+            @include md {
+                width: 70% !important;
+                margin: 0 auto;
+            }
+            @include sm {
+                width: 95% !important;
+            }
+
         }
     }
 }

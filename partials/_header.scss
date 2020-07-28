@@ -8,6 +8,15 @@
     z-index: 10;
 }
 
+.fas.fa-search,
+.fas.fa-shopping-bag,
+.shoppingBagCircle div {
+    @media only screen and (max-width: 830px) {
+        display: none;
+    }
+}
+
+
 .wrapper--header {
     display: flex;
         justify-content: space-between;

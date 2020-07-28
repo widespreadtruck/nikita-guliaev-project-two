@@ -25,21 +25,30 @@
         @include fontStyleH5;
         @include xs {
             font-size: 1rem;
-            text-align: left;
         }
     }
     h2 {
         @include fontStyleH2;
+        @include lg {
+            font-size: 3rem;
+        }
         @include xs {
-            @include fontStyleH3;
-            text-align: left;
+            font-size: 2.5rem;
         }
     }
     .review--italic_par {
         @include fontStyleItalic;
+
+        @include lg {
+            font-size: 2rem;
+        }
+        @include sm {
+            width: 90%;
+            margin: 0 auto;
+            margin-bottom: 2rem;
+        }
         @include xs {
             font-size: 1.6rem;
-            text-align: left;
         }
     }
     .fivestars i {
@@ -48,7 +57,7 @@
     }
     .fivestars {
         @include xs {
-            text-align: left;
+            text-align: center;
         }
     }
     .reviews__name {
@@ -60,7 +69,6 @@
     }
     @include sm {
         padding: 3rem 1rem;
-        // padding-top: 3rem;
     }
 }
 
@@ -72,15 +80,44 @@
     i:hover {
         color: $textGrey;
     }
-    @include xs {
-        display: none;
-    }
+    // @include xs {
+    //     display: none;
+    // }
 }
 
 .left-arrow {
     left: -5rem;
+
+    @include xl {
+        left: 0rem;
+    }
+    @include lg {
+        left: 0rem;
+    }
+
+    @include sm {
+        top: 225px;
+        font-size: 3rem;
+    }
+
+    @include xs {
+        top: 255px;
+    }
 }
 
 .right-arrow {
     right: -5rem;
+
+    @include xl {
+        right: 0rem;
+    }
+
+    @include sm {
+        top: 225px;
+        font-size: 3rem;
+    }
+
+    @include xs {
+        top: 255px;
+    }
 }
