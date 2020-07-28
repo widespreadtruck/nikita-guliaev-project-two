@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    @include xs {
+    @media only screen and (max-width: 1060px) {
         flex-direction: column;
     }
 }
@@ -15,65 +15,77 @@
     justify-content: space-between;
     // text-align: center;
     // width: 70%;
-    flex: 1 0 65%;
+    flex: 1 1 65%;
     padding-left: 13%;
     padding-right: 7%;
     padding-top: 7%;
     padding-bottom: 7%;
+
+    @media only screen and (max-width: 1060px) {
+    padding-left: 7%;
+    max-width: 75%;
+    margin: 0 auto;
+    }
+
     @include xs {
-        flex-direction: column;
+        // flex-direction: column;
         // flex-wrap: wrap;
         max-width: 75%;
-        margin: 0 auto;
-        padding: 0;
-        order: 2;
+        padding: 0 auto;
     }
 }
 
 .info--rightContainer {
-    flex: 1 0 30%;
+    flex: 1 1 30%;
     // width: 30%;
     display: flex;
-    flex: 1 0 35%;
+    // flex: 1 0 35%;
     align-items: center;
     img {
-        // position: absolute;
-        // top: 0;
-        // right: -180px;
-        height: auto;
+        min-width: 400px;
+        font-size: 0;
+        display: block;
+        width: 100%;
+        // height: auto;
     }
-    @include xs {
-        order: 1;
-        margin-top: 0rem;
-        margin-bottom: 2rem;
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
+    @media only screen and (max-width: 1060px) {
+        // margin-top: 0rem;
+        // margin-bottom: 2rem;
+        // width: 65%;
+        // margin-left: auto;
+        // margin-right: auto;
+        display: none;
     }
 }
 
 
-.articleBox {
-    width: 45%;
-    padding-left: 30px;
-    div {
-        position: relative;
-        i {
-            position: absolute;
-            top: 18px;
-            left: -42px;
-            font-size: 2.4rem;
-            @include xs {
-                display: none;
+.info--leftContainer {
+    .articleBox {
+        // @include xl {
+        //     width: 208px;
+        // }
+        min-width: 180px;
+        flex: 1 1;
+        margin: 0 20px;
+        div {
+            position: relative;
+            i {
+                position: absolute;
+                top: 18px;
+                left: -32px;
+                font-size: 2.4rem;
+                @include xs {
+                    display: none;
+                }
             }
         }
-    }
-    @include xs {
-        width: 100%;
-        margin-bottom: 2rem;
-        &:hover {
-            h5 {
-                text-decoration: none !important;
+        @include xs {
+            width: 100%;
+            margin: 0 0 2rem 0;
+            &:hover {
+                h5 {
+                    text-decoration: none !important;
+                }
             }
         }
     }
