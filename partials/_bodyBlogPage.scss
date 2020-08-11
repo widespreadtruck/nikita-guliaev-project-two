@@ -1,10 +1,14 @@
 .blogBody {
     background-color: $lightpink;
-    height: 2260px;
+    height: 2360px;
     position: relative;
     .topCenteredHeader {
         @include fontStyleContactPageHeaders;
         max-width: 70%;
+        @include md {
+            max-width: 90%;
+        }
+
     }
     @include xs {
         height: auto;
@@ -17,7 +21,8 @@
     left: 0;
     right: 0;
     bottom: auto;
-    width: 1180px;
+    width: 90%;
+    max-width: 1180px;
     background-color: white;
     margin: 0 auto;
     @include xs {
@@ -31,14 +36,47 @@
     align-items: center;
     margin-top: 2.5rem;
     margin-bottom: 4rem;
+    .topCenteredPar {
+        @include md {
+            font-size: 1.2rem;
+            max-width: 80%;
+        }
+        @include sm {
+            font-size: 1.2rem;
+            max-width: 100%;
+        }
+
+    }
     .topCenteredHeader {
         text-align: center;
+        @include lg {
+            font-size: 2.5rem;
+        }
+        @include md {
+            font-size: 2rem;
+        }
+        @include sm {
+            font-size: 1.8rem;
+        }
+
     }
     span {
         color: black;
     }
 }
 
+.first {
+    padding-top: 2rem;
+        @include lg {
+            padding-top: 5rem;
+        }
+        @include md {
+            padding-top: 2rem;
+        }
+        @include sm {
+            // padding-top: 1rem;
+        }
+}
 .adminDateCategoryContainer {
     display: flex;
     flex-direction: row;
@@ -46,10 +84,18 @@
     border: 1px solid transparent;
     border-bottom: 1px solid $darkpink;
     margin-bottom: 5rem;
+
+    @include lg {
+        flex-direction: column;
+        margin-bottom: 3rem;
+    }
     .adminDateCategoryContainer-leftContainer {
-        flex: 1 0 50%;
+        flex: 1 1 50%;
         display: flex;
         justify-content: flex-start;
+        @include lg {
+            margin-bottom: 0.5rem;
+        }
         &__rightSide {
             display: flex;
             flex-direction: column;
@@ -61,6 +107,9 @@
         display: flex;
         justify-content: space-between;
         @include flexHor;
+        @include lg {
+            // margin-bottom: 2rem;
+        }
         .rightContainer-box {
             flex: 1 0 30%;
             display: flex;
@@ -68,25 +117,51 @@
             // justify-content: flex-start;
             align-items: flex-start;
             @include xs {
-                scale: 70%;
+                font-size: 1rem;
                 // align-items: flex-start;
                 text-align: left;
                 // flex-direction: row;
             }
         }
+        // .rightContainer-box:last-child {
+        //     @include sm {
+        //         display: none;
+        //     }
+        // }
+        @include lg {
+            margin-top: 2rem;
+        }
         @include xs {
-            margin-top: 3rem;
+            margin-top: 1rem;
         }
     }
     H5 {
         @include contactPageMiniHeaders;
         margin-top: 2rem;
         margin-bottom: 0rem;
+        @include md {
+            font-size: 1.2rem;
+        }
+        @include sm {
+            font-size: 1rem;
+        }
+    }
+
+    p {
+        @include md {
+            font-size: 1rem;
+        }
+        @include sm {
+            font-size: 0.8rem;
+        }
+    }
+    @include lg {
+        // flex-direction: column;
+        margin-bottom: 5rem;
     }
     @include xs {
         flex-direction: column;
-        margin-bottom: 10rem;
-        // margin-bottom: ;
+        margin-bottom: 5rem;
     }
 }
 
@@ -111,7 +186,12 @@
 
 .blog-body-paragraphs {
     padding-bottom: 2rem;
-    margin: 0;
+    margin: 0 auto;
+    @include md {
+    }
+    @include xs {
+        // max-width: 90%;
+    }
     &:hover {
         color: black;
     }
@@ -124,6 +204,10 @@
     // text-align: center;
     H5 {
         @include contactPageMiniHeaders;
+        @include sm {
+            // margin-bottom: 0;
+            // margin-top: 0;
+        }
     }
     .blogBody--socials_Container {
         display: flex;
@@ -133,6 +217,9 @@
         margin-bottom: 6rem;
         li {
             padding: 1rem;
+        }
+        @include md {
+            margin-bottom: 0;
         }
     }
 }
@@ -207,25 +294,44 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 4rem;
-    .commentContainer__leftSide {
-        // width: 50px;
-        // height: 50px;
-        flex: 1 0 5%;
-        // flex-basis: ;
-        @include xs {
-            flex: 1 0 10%;
-            margin-right: 1rem;
+    // @include xs {
+        //     padding-bottom: 0rem;
+        // }
+    }
+
+
+.commentContainer__leftSide {
+    // width: 50px;
+    // height: 50px;
+    flex: 1 0 2%;
+    // flex-basis: ;
+    img {
+        display: block;
+        min-width: 70px;
+        max-width: 90px;
+        @include md {
+            padding-right: 2rem;
         }
     }
-    @include xs {
-        padding-bottom: 0rem;
+
+    @include xl {
+        flex: 1 1 1%;
+        margin-right: 0rem;
+    }
+    @include lg {
+        flex: 1 1 10%;
+        // margin-right: 2rem;
+    }
+    @include md {
+        // flex: 1 1 10%;
+        // margin-right: 2rem;
     }
 }
 
 .commentContainer__rightSide {
-    flex: 1 0 85%;
+    flex: 1 1 85%;
     background-color: $lightpink;
-    height: 100px;
+    height: auto;
     padding-left: 2rem;
     padding-top: 1rem;
     position: relative;
@@ -247,10 +353,17 @@
         color: rgba($textGrey, $alpha: 0.6);
         font-size: 1rem;
     }
-    @include xs {
-        flex: 1 0 70%;
-        height: auto;
+    @include xl {
+        flex: 1 1 80%;
     }
+    @include lg {
+        // flex: 1 1 70%;
+    }
+    // @include md {
+    //     flex: 1 1 15%;
+    //     margin-right: 2rem;
+    // }
+    
 }
 
 .commentName,
@@ -259,6 +372,10 @@
     margin: 0;
 }
 
+.commentText {
+    padding-right: 1rem;
+    line-height: 150%;
+}
 
 // forms
 .blog--comment--form {
@@ -286,6 +403,12 @@
     .textareaButton {
         @include xs {
             margin-bottom: 1rem;
+        }
+    }
+    #contactFormName,
+    #contactFormEmail {
+        @include xs {
+            margin-right: 0;
         }
     }
 }

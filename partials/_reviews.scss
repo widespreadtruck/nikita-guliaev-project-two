@@ -4,6 +4,9 @@
     background-position: center;
     display: flex;
     height: 720px;
+    @include md {
+    padding-top: 5rem;
+    }
     @include xs {
     padding-top: 0rem;
     background-image: none;
