@@ -3,9 +3,9 @@
     background-image: url(../assets/pattern.png);
     background-position: center;
     padding-bottom: 12rem;
-    @include xs {
+    @include md {
         padding-top: 3rem;
-        padding-bottom: 3rem;
+        padding-bottom: 10rem;
     }
 }
 
