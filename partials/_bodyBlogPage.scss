@@ -413,27 +413,10 @@
     }
 }
 
-
-
-
-
-
-
-
-
-
-// .tip {
-//   width: 0px;
-//   height: 0px;
-//   position: absolute;
-//   background: transparent;
-//   border: 10px solid green;
-// }
-// .tip-left {
-//   top: 0px;
-//   left: 0px;
-//   border-top-color: transparent;
-//   border-left-color: transparent;
-//   border-bottom-color: transparent;  
-// // }
-
+@media (min-width: 450px) and (max-width: 662px) {
+    #contactFormSubject,
+    #contactFormEmail {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+}
