@@ -1792,3 +1792,9 @@ nav {
   .contactForm.blog-page-contact #contactFormName,
   .contactForm.blog-page-contact #contactFormEmail {
     margin-right: 0; } }
+
+@media (min-width: 450px) and (max-width: 662px) {
+  #contactFormSubject,
+  #contactFormEmail {
+    margin-left: 0 !important;
+    margin-right: 0 !important; } }
