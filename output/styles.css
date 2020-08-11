@@ -1798,3 +1798,15 @@ nav {
   #contactFormEmail {
     margin-left: 0 !important;
     margin-right: 0 !important; } }
+
+@media (min-width: 468px) and (max-width: 520px) {
+  .blogBody {
+    height: 2460px; } }
+
+@media (min-width: 455px) and (max-width: 467px) {
+  .blogBody {
+    height: 2560px; } }
+
+@media (min-width: 400px) and (max-width: 454px) {
+  .blogBody {
+    height: 3400px; } }
